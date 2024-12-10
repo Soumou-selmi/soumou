@@ -1,0 +1,134 @@
+/* Importation de la police Orbitron pour un style futuriste */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+
+/* Style global */
+body {
+    font-family: 'Orbitron', sans-serif; /* Police inspirée de l'espace */
+    color: #f4e8c1;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-attachment: fixed;
+    overflow-x: hidden;
+}
+
+/* Style des titres */
+h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    color: #2f22e2;
+    text-shadow: 2px 2px 15px rgba(255, 94, 0, 0.8); /* Effet lumineux */
+}
+
+/* Style du formulaire */
+form {
+    background: rgba(38, 15, 6, 0.85); /* Couleur de fond semi-transparente */
+    border: 2px solid #e25822;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.7);
+    width: 80%;
+    max-width: 500px;
+}
+
+/* Style des labels */
+label {
+    font-size: 1.3rem;
+    color: #f4e8c1;
+    margin-top: 10px;
+    display: block;
+    text-align: left;
+}
+
+/* Style des champs de saisie */
+select, input[type="text"], input[type="radio"] {
+    margin: 10px 0;
+    font-size: 1rem;
+    padding: 10px;
+    width: 100%;
+    border: 2px solid #e25822;
+    border-radius: 10px;
+    background-color: #3e1f23;
+    color: #f4e8c1;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+/* Effet au focus sur les champs */
+select:focus, input[type="text"]:focus {
+    outline: none;
+    border-color: #ff9b42; /* Couleur plus lumineuse */
+    transform: scale(1.05); /* Effet d'agrandissement */
+}
+
+/* Style des boutons radio */
+input[type="radio"] {
+    margin-right: 10px;
+    width: auto;
+    transform: scale(1.2); /* Légèrement agrandi pour une meilleure visibilité */
+    accent-color: #ff9b42;
+}
+
+/* Style des boutons */
+button {
+    background: linear-gradient(120deg, #e25822, #ff9b42); /* Dégradé chaud */
+    color: #f4e8c1;
+    font-size: 1.3rem;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 20px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+/* Effet au survol */
+button:hover {
+    transform: translateY(-5px); /* Léger déplacement vers le haut */
+    background: linear-gradient(120deg, #ff9b42, #e25822); /* Inversion du dégradé */
+}
+
+/* Effet au clic */
+button:active {
+    transform: translateY(0);
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2.5rem;
+        color: #2f22e2;
+    }
+
+    form {
+        width: 95%; /* Ajustement pour petits écrans */
+    }
+
+    label, button {
+        font-size: 1rem;
+    }
+}
+/* Apply a futuristic font */
+#background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1; /* Send the video behind the content */
+    opacity: 0.5; /* Optional: Adjust for better contrast with content */
+}
+
+/* Ensure text and content remain visible and readable */
+body {
+    font-family: 'Orbitron', sans-serif;
+    background-color: #1a1a2e; /* Fallback color */
+   
+    margin: 0;
+}
